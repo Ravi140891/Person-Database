@@ -39,6 +39,7 @@ main{
     left: 50%;
     transform: translate(-50%,40%);
     background-color: bisque;
+    display: none;
 }
 .model-box form {
     display: flex;
@@ -62,4 +63,46 @@ input{
 }
 .btn:hover{
     cursor: pointer;
+}
+section{
+    margin-top: 5rem;
+    padding: 5rem;
+}
+.name{
+    width: 30%;
+    padding: 1rem;
+    border-right: 1px solid black;
+}
+.age{
+    width: 15%;
+    padding: 1rem;
+    border-right: 1px solid black;
+}
+.pan{
+    width: 20%;
+    padding: 1rem;
+    border-right: 1px solid black;
+}
+.qualification{
+    width: 25%;
+    padding: 1rem;
+}
+ul li{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-bottom: none;
+    text-align: center;
+}
+.dlt-btn{
+    width: 10%;
+}
+ul li:last-child{
+    border-bottom: 1px solid black;
+}
+.err{
+    color: red;
+}
+#sort{
+    padding: 5px;
 }

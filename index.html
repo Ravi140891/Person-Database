@@ -23,28 +23,41 @@
             <div class="input">
             <label for="name">Enter your name</label>
             <input type="text" name="name" id="name">
-            <button class="btn">Add Info</button>
+            <button class="btn add-btn">Add Info</button>
             </div>
 
             <div class="model-box">
-                <form action="">
+                <form class="person-data">
                     <label for="full-name">Full Name</label>
-                    <input type="text" name="full-name" id="first-name">
+                    <input type="text" name="full-name" id="full-name" required>
                     <label for="PAN">Enter your PAN number</label>
-                    <input type="text" name="PAN" id="PAN">
+                    <input type="text" name="PAN" id="PAN" required>
                     <label for="age">Enter your age</label>
-                    <input type="number" name="age" id="age">
+                    <input type="number" name="age" id="age" required>
                     <label for="education">Your highest qualification</label>
-                    <input type="text" name="education" id="edu">
-                    <button class="btn">Submit</button>
+                    <input type="text" name="education" id="edu" required>
+                    <button class="btn submit-btn">Submit</button>
                 </form>
+                <p class="err"></p>
+            </div>
+            <div class="sort">
+                <select name="sorting" id="sort">
+                    <option value="all">Sort</option>
+                    <option value="fullname">By name</option>
+                    <option value="age">By age</option>
+                </select>
             </div>
             <div class="search">
-                <label for="search">Enter PAN to search</label>
-                <input type="text" name="search" id="search">
-                <button class="btn">Search</button>
+                <input type="text" name="search" id="search" placeholder="Enter PAN to search">
+                <button class="btn search-btn">Search</button>
+                <p class="search-result"></p>
             </div>
         </main>
+        <section>
+            <ul class="data-list">
+                <!-- <li><span class="serial">1</span><span class="name">Ravi</span><span class="pan">BIQPP0982B</span><span class="age">31</span><span class="qualification">B.Tech</span></li> -->
+            </ul>
+        </section>
     </div>
 </body>
 </html>
